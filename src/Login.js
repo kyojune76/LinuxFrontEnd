@@ -1,26 +1,21 @@
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom";
-function App() {
-  const navigate = useNavigate();
 
-  const HandleLogin = () => {
-    navigate("/login");
-  };
+function Loggin() {
   return (
     <div>
       <Login>
         <InputContainer>
-          <Title>!홀****짝!</Title>
+          <Title>로그인</Title>
           <Input type="text" placeholder="아이디" />
           <Input type="password" placeholder="패스워드" />
         </InputContainer>
-        <Button onClick={HandleLogin}>회원가입</Button>
+        <Button>로그인</Button>
       </Login>
     </div>
   );
 }
 
-export default App;
+export default Loggin;
 
 const Login = styled.div`
   width: 100%;
@@ -59,7 +54,7 @@ const Input = styled.input`
 const Button = styled.button`
   width: 500px;
   height: 50px;
-  margin-top: 250px; /* 버튼을 입력란 아래로 배치 */
+  margin-top: 250px;
   border-style: hidden;
   background-color: #ffffff;
   color: black;
